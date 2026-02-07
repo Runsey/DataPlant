@@ -1,3 +1,11 @@
+#include<unistd.h>
+#include<iostream>
+#include<fcntl.h>
+#include<sys/socket.h>
+#include <sys/types.h>
+#include <netdb.h>
+#include<cstring>
+
 struct UdpReader {
     int fd;
 };
