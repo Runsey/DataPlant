@@ -22,3 +22,7 @@ run: $(TARGET)
 clean:
 	rm -f $(OBJ) $(TARGET)
 
+mdp_send: src/send/main.cpp
+	$(CXX) -O3 -std=c++20 -Wall -Wextra -pedantic $< -o $@
+
+
